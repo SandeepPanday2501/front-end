@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    color: #010304;
+    /*font-size: 17px;
+    line-height: 1.53;*/
+  
+    font: 17px/1.53 'Roboto', sans-serif;
+}
+
+.banner-part {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    /* background: color url()repeat 50% 50% /cover; */
+}
+.banner-part::after {
+    content:'' ;
+    position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(191,61,66,1);
+     mix-blend-mode: darken;
+
+}
+
+.banner-part::before {
+    content: '';
+    height: 100vh;
+    display: block;
+
+}
+
+.bg-stretch {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    max-width: 500px;
+    color: #ffffff;
+     font-family: 'Robota', sans-serif;
+     text-align: center;
+    
+}
+
+.banner-content p {
+    margin: 0 0 25px;
+}
+
+
+
+.overline-text{
+    color: #ffffff;
+     font-family: 'Robota', sans-serif;
+     text-transform: uppercase;
+     font-size: 34px;
+
+}
+
+h1{
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: 'Robota', sans-serif;
+    margin: 0 0 45px;
+    
+}
+
+/* .btn{ 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+} */
+
+.btn-primary {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #333333;
+    border: 2px solid white;
+    min-width: 230px;
+    /* height: 60px; */
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: top;
+    border-radius: 30px;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    z-index: 999;
+    padding: 15px 50px;
+}
+
+#header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
